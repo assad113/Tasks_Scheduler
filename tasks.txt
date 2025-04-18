@@ -1,0 +1,13 @@
+# This is a sample task list file.
+# Each line represents a task in the format:
+# name, duration_in_seconds, dependency1 dependency2 ...
+
+TaskA, 5,
+TaskB, 3, TaskA
+TaskC, 2, TaskA TaskB
+TaskD, 4,
+TaskE, 1, TaskD
+ReportGeneration, 7, TaskC TaskE
+DataFetching, 6,
+DataProcessing, 8, DataFetching
+FinalizeReport, 3, ReportGeneration DataProcessing
